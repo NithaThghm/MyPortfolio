@@ -1,0 +1,50 @@
+    *{
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        box-sizing: border-box;
+    }
+
+
+/* 0. ---- Navigation Top Bar */
+
+    #NavTopMenu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        outline: 1px solid blue;
+    }
+
+    .NavOptions{
+        display: flex;
+        align-items: center;
+    }
+
+
+/* 1. ---- Hello Page */
+
+    #HelloPage{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .Intro{
+        margin: auto;
+    }
+
+    h2{
+        font-size: 20vh;
+    }
+
+    .MyAvatar{
+        outline : 1px solid blue;
+        width: 40vw;
+        border-radius: 50%;;
+    }
+
+
+/* --- Gestion du responsive */
+
+ @media screen and (min-width: 576px){
+
+ }

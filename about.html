@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,16 +9,37 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet"> 
 </head>
+
 <body>
+    <!-- Burger Menu : Bouton -->
+    <div id="burgerBtn" class="burgerBtn" >
+        <span class="burgerBtnBar"></span>
+        <span class="burgerBtnBar"></span>
+        <span class="burgerBtnBar"></span>
+    </div>
+    <!-- Burger Menu : Menu -->
+    <nav id="burgerMenu" class="burgerMenu">
+        <div class="navOptions">
+            <a href=""><img src="./assets/icons8-soleil-48.svg" alt=""></a>
+            <a href="">FR</a>
+            <a href="">CV</a>
+        </div>
+        <div class="navLinks">
+            <a href="./index.html">Home</a>
+            <a href="./about.html">A Propos</a>
+            <a href="">Projets</a>
+            <a href="">Compétences</a>
+        </div>
+    </nav>
     <header>
+        <!-- Navigation Top Bar -->
         <nav id="NavTopMenu">
             <div class="NavMain">
-                <a href="">Home</a>
-                <a href="">A Propos</a>
+                <a href="./index.html">Home</a>
+                <a href="./about.html">A Propos</a>
                 <a href="">Projets</a>
                 <a href="">Compétences</a>
             </div>
-
             <div class="NavOptions">
                 <a href=""><img src="./assets/icons8-soleil-48.svg" alt=""></a>
                 <a href="">FR</a>
@@ -25,7 +47,7 @@
             </div>
         </nav>
     </header>
-    <main>
+    <main id="main">
         <!-- Title Design -->
         <div class="AboutTitleBg">
             <h1 class="AboutTitle">a propos</h1>
@@ -63,5 +85,7 @@
     <footer>
         <p>Copyright. Made by Nitha.</p>
     </footer>
+
+    <script src="./script.js"></script>
 </body>
 </html>

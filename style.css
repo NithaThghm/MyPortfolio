@@ -1,4 +1,4 @@
-/* --- CSS that applies to all pages */
+/* .... CSS that applies to all pages */
 
 *{
     margin: 0;
@@ -13,8 +13,9 @@
     --AboutTitleDecY: calc(var(--AboutTitleBg-height)/2);
 }
 
+/* .... CSS for specific elements */
+
 body{
-    position: relative;
     height: 100vh;
     width: 100vw;
 }
@@ -30,8 +31,6 @@ main{
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding-left: 50px;
-    padding-right: 50px;
 }
 
 footer{
@@ -42,12 +41,44 @@ footer{
     outline: solid 1px red;
 }
 
+/* .... Burger Menu */
 
+.burgerBtn{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 40px;
+    height: 30px;
+    cursor: pointer;
+    background: none;
+    border: 1px solid gray;
+    border-radius: 15%;
+    z-index: 1;
+}
 
-/* 0. ---- Navigation Top Bar */
+.burgerBtnBar{
+    content: '';
+    display: block;
+    width: 50%;
+    height: 2px;
+    background-color:  black;
+}
+
+.burgerMenu{
+    position: absolute;
+    display: none;
+    flex-direction: column-reverse;
+    background-color: blue;
+    height: 100%;
+    width: 100%;    
+}
+
+/* .... Navigation Top Bar */
 
     #NavTopMenu{
-        display: flex;
+        display: none;
         justify-content: space-between;
         align-items: center;
         outline: 1px solid blue;
@@ -57,6 +88,13 @@ footer{
         display: flex;
         align-items: center;
     }
+
+/* .... Navigation elements */
+
+.navLinks{
+    display: flex;
+    flex-direction: column;
+}
 
 
 /* 1. ---- Hello Page */
@@ -85,10 +123,9 @@ footer{
 
 .AboutTitleBg{
     position: relative;
-    top: 0;
     width: 100vw;
     height: var(--AboutTitleBg-height);
-    background: linear-gradient(to bottom,#fffade 50%,rgba(230, 20, 20, 0) 50%);
+    /* background : linear-gradient(to bottom,#fffade 50%,rgba(230, 20, 20, 0) 50%);*/ /*Le linear-gradient me créer un bug à l'affichage du burger menu*/
     outline: solid 1px red;
 }
 
@@ -198,9 +235,9 @@ footer{
     .AboutTitleBg{
         position: relative;
         right: 0;
-        height: 100vh;
+        height: 100%;
         width: var(--AboutTitleBg-width);
-        background: linear-gradient(to left,#fffade 50%,rgba(230, 20, 20, 0) 50%);
+        /* background: linear-gradient(to left,#fffade 50%,rgba(230, 20, 20, 0) 50%); */
         outline: solid 1px red;
     }
     
